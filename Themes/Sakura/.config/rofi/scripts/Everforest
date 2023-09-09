@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r ~/Themes/Everforest/. ~/Themes/Everforest/.zshrc ~/ &&
+wal -i Wallpaper/fog_forest_2.jpg &&
+qtile cmd-obj -o cmd -f restart 
+
