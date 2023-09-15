@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cp -r ~/Themes/Cozy/. ~/Themes/Cozy/.zshrc ~/ &&
-wal  -i ~/Wallpaper/Aesthetic2.jpg &&
-qtile cmd-obj -o cmd -f restart 
-

@@ -1,6 +1,9 @@
 #!/bin/bash
 
+sed -i "$s/.*/colors = Sakura/" "$HOME/.config/qtile/settings/pallete.py"
 cp -r ~/Themes/Sakura/. ~/Themes/Sakura/.zshrc ~/ &&
-wal -i ~/Wallpaper/120_-_KnFPX73.jpg &&
+feh --bg-scale  ~/Wallpaper/120_-_KnFPX73.jpg &&
+sed -i '$s/.*/feh --bg-scale "~/Wallpaper/120_-_KnFPX73.jpg"/' "$HOME/.config/qtile/autostart_once.sh"
 qtile cmd-obj -o cmd -f restart 
+
 

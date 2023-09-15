@@ -1,6 +1,8 @@
 #!/bin/bash
 
+sed -i "$s/.*/colors = Cozy/" "$HOME/.config/qtile/settings/pallete.py"
 cp -r ~/Themes/Cozy/. ~/Themes/Cozy/.zshrc ~/ &&
-wal  -i ~/Wallpaper/Aesthetic2.jpg &&
+feh --bg-scale ~/Wallpaper/Aesthetic2.jpg &&
+sed -i '$s/.*/feh --bg-scale "~/Wallpaper/Aesthetic2.jpg"/' "$HOME/.config/qtile/autostart_once.sh"
 qtile cmd-obj -o cmd -f restart 
 

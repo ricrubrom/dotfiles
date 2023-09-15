@@ -20,5 +20,8 @@ alias setclip="xclip -sel clp"
 alias forcepull="git fetch; git reset --hard HEAD; git merge '@{u}'"
 alias prettyjson='python -m json.tool'
 alias cso='cd $HOME/Desktop/CSO'
-alias tdl='cd $HOME/Desktop/TallerDeLenguajes2'
+alias tdl='cd $HOME/Desktop/Taller_De_Lenguajes_II'
+alias clear='/bin/clear ; neofetch'
 alias wifi="nmtui-connect"
+alias gi='git init ; git branch -m main'
+

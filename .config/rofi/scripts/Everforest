@@ -1,6 +1,8 @@
 #!/bin/bash
 
+sed -i "$s/.*/colors = Everforest/" "$HOME/.config/qtile/settings/pallete.py"
 cp -r ~/Themes/Everforest/. ~/Themes/Everforest/.zshrc ~/ &&
-wal -i Wallpaper/fog_forest_2.jpg &&
+feh --bg-scale  ~/Wallpaper/fog_forest_2.jpg &&
+sed -i '$s/.*/feh --bg-scale "~/Wallpaper/fog_forest_2.jpg"/' "$HOME/.config/qtile/autostart_once.sh"
 qtile cmd-obj -o cmd -f restart 
 
